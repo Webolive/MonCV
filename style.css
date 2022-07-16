@@ -7,12 +7,23 @@
 }
 
 body {
-    display: flex;
     background-color: #fff;
     width: 900px;
     margin: auto;
 }
 
+/* ***** top ***** */
+
+#leftTop {
+    display: flex;
+    background-color: rgb(152,203,0);
+}
+
+#image {
+    background-color: rgb(152,203,0);
+    height: 300px;
+    width: 300px;
+}
 /* ***** nom ***** */
 
 #nom {
@@ -25,10 +36,28 @@ body {
     line-height: 200px;
 }
 
+/* ***** principal ***** */
+
+#principal {
+    display: flex;
+    width: 900px;
+}
+
+.gras {
+    height: 7px;
+    font-weight: bold;
+}
+
+.penche {
+    height: 7px;
+    font-style: italic;
+}
+
 /* ***** banniere gauche ***** */
 
 #left {
     background-color: rgb(34,51,67);
+    width: 300px;
     width: 300px;
 }
 
@@ -37,7 +66,7 @@ body {
 #bannerlefttop {
     background-color: rgb(152,203,0);
     position: relative;
-    height: 650px;
+    height: 350px;
     border-radius: 0px 0px 30px 0px;
 }
 
@@ -73,6 +102,7 @@ h4 {
 
 #bannerleftbottom {
     background-color: rgb(34,51,67);
+    width: 300px;
     color: rgb(235, 240, 219);
 }
 
@@ -84,22 +114,22 @@ h4 {
 
 #tableau1, #tableau2, #tableau3, #tableau4 {
     width: 300px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .titre {
     text-align: center;
     font-size: 1.5rem;
+    padding-top: 10px;
 }
 
 th {
-    padding-left: 30px;
-    float: left;
+    padding-left: 20px;
 }
 
 td {
-    padding-right: 20px;
     text-align: right;
+    padding-right: 20px;
 }
 
 .competences {
@@ -114,39 +144,43 @@ td {
 /* ***** historique ***** */
 
 #historique {
-    position: absolute;
+    width: 600px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#experience h3 {
+    width: 350px;
+    padding-top: 15px;
+}
+
+#experience {
     display: flex;
-    width: 600px;
-    padding: 370px 0 0 300px;
+    height: 70px;
 }
 
-#tableau5 {
-    width: 600px;
+#experience .img {
+    padding: 30px 50px;
 }
 
-#tableau5 img {
-    float: left;
+#historiqueTexte, #formationTexte, #loisirsTexte {
+    padding-left: 150px;
+    color: rgb(34,51,67);
+    font-size: 1.1rem;
 }
 
-.titre {
-    float: right;
+#formation, #loisirs {
+    display: flex;
+    height: 50px;
+    padding-top: 20px;
 }
 
-#historiqueTexte {
-    width:470px;
-    padding: 130px 100px 0 0;
+#formation .img {
+    padding: 10px 50px;
 }
 
-#tableau6 {
-    width: 600px;
-    padding-top: 1600px;
-}
-
-#textForm {
-    padding: 1600px;
-}
-
-#tableau7 {
-    width: 600px;
-    padding-top: 3000px;
+#loisirs .img {
+    padding: 10px 50px;
 }
