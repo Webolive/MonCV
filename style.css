@@ -1,0 +1,152 @@
+@import url();
+
+*, ::before ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    background-color: #fff;
+    width: 900px;
+    margin: auto;
+}
+
+/* ***** nom ***** */
+
+#nom {
+    background-color: rgb(34,51,67);
+    width: 600px;
+    height: 300px;
+    font-size: 2rem;
+    color: rgb(235, 240, 219);
+    text-align: center;
+    line-height: 200px;
+}
+
+/* ***** banniere gauche ***** */
+
+#left {
+    background-color: rgb(34,51,67);
+    width: 300px;
+}
+
+/* ***** banniere gauche haut ***** */
+
+#bannerlefttop {
+    background-color: rgb(152,203,0);
+    position: relative;
+    height: 650px;
+    border-radius: 0px 0px 30px 0px;
+}
+
+#image {
+    height: 250px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.logoProfil {
+    width: 300px;
+    display: flex;
+}
+
+.logo {
+    width: 40%;
+    height: 60px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.titre1 {
+    width: 60%;
+    height: 60px;
+}
+
+h4 {
+    position: absolute;
+    margin: 30px 20px 0 20px ;
+}
+
+/* ***** banniere gauche bas ***** */
+
+#bannerleftbottom {
+    background-color: rgb(34,51,67);
+    color: rgb(235, 240, 219);
+}
+
+.etatCivil {
+    width: 300px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#tableau1, #tableau2, #tableau3, #tableau4 {
+    width: 300px;
+    padding-top: 10px;
+}
+
+.titre {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+th {
+    padding-left: 30px;
+    float: left;
+}
+
+td {
+    padding-right: 20px;
+    text-align: right;
+}
+
+.competences {
+    width: 275px;
+    padding: 0 15px;
+}
+
+#tableau4 {
+    padding-bottom: 30px;
+}
+
+/* ***** historique ***** */
+
+#historique {
+    position: absolute;
+    display: flex;
+    width: 600px;
+    padding: 370px 0 0 300px;
+}
+
+#tableau5 {
+    width: 600px;
+}
+
+#tableau5 img {
+    float: left;
+}
+
+.titre {
+    float: right;
+}
+
+#historiqueTexte {
+    width:470px;
+    padding: 130px 100px 0 0;
+}
+
+#tableau6 {
+    width: 600px;
+    padding-top: 1600px;
+}
+
+#textForm {
+    padding: 1600px;
+}
+
+#tableau7 {
+    width: 600px;
+    padding-top: 3000px;
+}
