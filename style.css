@@ -181,6 +181,14 @@ h3 {
     padding: 10px 50px;
 }
 
+#separation {
+    height: 2px;
+    width: 300px;
+    text-align: left;
+    background-color: rgb(34,51,67);
+    box-shadow: 1px 3px 2px rgb(152,203,0);
+}    
+
 #loisirs .img {
     padding: 10px 50px;
 }
