@@ -95,10 +95,19 @@ body {
 
 h4 {
     position: absolute;
-    margin: 30px 20px 0 20px ;
+    margin: 30px 20px 20px 20px ;
 }
 
 /* ***** banniere gauche bas ***** */
+
+a {
+    color: rgb(235, 240, 219);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: rgb(152,203,0);
+}
 
 #bannerleftbottom {
     background-color: rgb(34,51,67);
