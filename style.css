@@ -1,4 +1,4 @@
-@import url();
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=GFS+Didot&display=swap');
 
 *, ::before ::after {
     box-sizing: border-box;
@@ -10,6 +10,7 @@ body {
     background-color: #fff;
     width: 900px;
     margin: auto;
+    font-family: 'GFS Didot', 'Cormorant Garamond', serif;
 }
 
 /* ***** top ***** */
@@ -66,7 +67,7 @@ body {
 #bannerlefttop {
     background-color: rgb(152,203,0);
     position: relative;
-    height: 350px;
+    height: 370px;
     border-radius: 0px 0px 30px 0px;
 }
 
@@ -77,6 +78,7 @@ body {
 }
 
 .logoProfil {
+    height: ;
     width: 300px;
     display: flex;
 }
@@ -95,7 +97,8 @@ body {
 
 h4 {
     position: absolute;
-    margin: 30px 20px 20px 20px ;
+    margin: 20px 10px 10px 10px;
+    text-align: justify;
 }
 
 /* ***** banniere gauche bas ***** */
