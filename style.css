@@ -5,7 +5,11 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --dark: rgb(34,51,67);
+    --light: rgb(235, 240, 219);
+    --main: rgb(152,203,0);
+}
 body {
     background-color: #fff;
     width: 900px;
@@ -15,102 +19,116 @@ body {
 
 /* ***** top ***** */
 
-#leftTop {
+#leftEtTop {
     display: flex;
-    background-color: rgb(152,203,0);
+    align-items: center;
+    justify-content: center;
 }
-
-#image {
-    background-color: rgb(152,203,0);
-    height: 250px;
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
     width: 300px;
     text-align: center;
-    padding-top: 40px;
+    background-color: var(--main);
 }
-/* ***** nom ***** */
-
-#nom {
-    background-color: rgb(34,51,67);
+.image img {
+    width: 250px;
+}
+.nom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark);
+    border-radius: 0px 0px 30px 0px;
     width: 600px;
     height: 300px;
     font-size: 2rem;
-    color: rgb(235, 240, 219);
+    color: var(--light);
     text-align: center;
-    line-height: 200px;
 }
 
 /* ***** principal ***** */
 
 #principal {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 900px;
 }
 
-.gras {
+.bold {
     height: 7px;
     font-weight: bold;
 }
 
-.penche {
+.italic {
     height: 7px;
     font-style: italic;
 }
 
 /* ***** banniere gauche ***** */
 
-#left {
-    background-color: rgb(34,51,67);
+.left {
+    background-color: var(--dark);
     width: 300px;
 }
 
 /* ***** banniere gauche haut ***** */
 
-#bannerlefttop {
-    background-color: rgb(152,203,0);
-    position: relative;
-    height: 370px;
-    border-radius: 0px 0px 30px 0px;
+.bannerlefttop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 460px;
+    background-color: var(--main);
+    border-radius: 0 0 30px 0;
 }
 
 .logoProfil {
-    height: 60px;
+    height: 50px;
     width: 300px;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.logo {
-    width: 40%;
-    height: 60px;
-    padding-left: 30px;
-    text-align: center;
+.logo svg {
+    width: 50px;
+    padding-left: 10px;
 }
 
-.titre1 {
-    width: 60%;
-    height: 60px;
+h2 {
+    width: 50%;
+    padding-right: 10px;
 }
 
 h4 {
-    position: absolute;
-    margin: 20px 10px 10px 10px;
+    padding: 20px 20px 10px 20px;
     text-align: justify;
 }
 
 /* ***** banniere gauche bas ***** */
 
-a {
-    color: rgb(235, 240, 219);
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: rgb(152,203,0);
-}
-
-#bannerleftbottom {
-    background-color: rgb(34,51,67);
+.bannerleftbottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 300px;
-    color: rgb(235, 240, 219);
+    height: 700px;
+    color: var(--light);
+}
+
+.bannerleftbottom svg {
+    height: 18px;
 }
 
 .etatCivil {
@@ -119,83 +137,189 @@ a:hover {
     text-align: center;
 }
 
-#tableau1, #tableau2, #tableau3, #tableau4 {
+.tableau1 {
+    display: flex;
+    flex-direction: column;
+    fill: var(--light);
+}
+
+thead {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-size: 1.50rem;
+    margin-top: 20px;
+}
+
+.tableau1 thead th {
+    padding-left: 30px;
+}
+
+thead .svgContact, thead .svgCompetences, thead .svgLangues {
+    height: 30px;
+}
+
+.tableau2 thead th {
+    padding: 0 20px 0 20px;
+}
+
+.tableau3 thead th {
+    padding: 0 30px 0 30px;
+}
+
+.tableau1 .titre, .tableau2 .titre, .tableau3 .titre {
+    padding-bottom: 7px;
+}
+
+.tableau2, .tableau3, .tableau4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
     width: 300px;
-    padding-top: 20px;
+    fill: var(--light);
 }
 
-.titre {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 10px;
-}
-
-th {
-    padding-left: 20px;
+.tableau4 {
+    margin-bottom: 50px;
 }
 
 td {
     text-align: right;
-    padding-right: 20px;
+    padding-left: 20px;
+}
+
+a {
+    color: var(--light);
+    /* text-decoration: none; */
+}
+
+a:hover {
+    background-color: var(--main);
 }
 
 .competences {
+    text-align: center;
     width: 275px;
-    padding: 0 15px;
 }
 
 #tableau4 {
     padding-bottom: 30px;
 }
 
+/* Progressbar Persentages */
+
+.progressBars {
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+}
+
+.fr, .en, .de {
+    display: grid;
+    grid-template: repeat(1, 20px) / repeat(1, 100px) 180px;
+    margin-bottom: 10px;
+}
+
+.stack-top {
+    z-index: 9;
+}
+
+.fr {
+    grid-area: 1 / 1 / 2 / 3 ;
+}
+
+.langueFr, .langueEn, .langueDe {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+.progressBarFrancais, .progressBarAnglais, .progressBarAllemand {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border: 3px solid var(--main);
+    background-color: var(--light);
+    border-radius: 100px;
+}
+
+/* Based based on percentage */
+.boxFr, .boxEn, .boxDe {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    height: 14px;
+    border-radius: 100px;
+    background-color: var(--main);
+}
+
+.boxFr p, .boxEn p, .boxDe p {
+    padding-right: 10px;
+}
+
+.progFr, .progEn, .progDe {
+    font-size: 0.75rem;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+/* Modification of the size of the progression */
+
+.boxFr {
+    width: 180px;
+}
+
+.boxEn, .boxDe {
+    width: 162px;
+}
+
 /* ***** historique ***** */
 
 #historique {
+    display: flex;
+    flex-direction: column;
     width: 600px;
+}
+
+#experience, #formation, #loisirs {
+    display: flex;
+    height: 50px;
+    padding-top: 20px;
+}
+
+#experience .svg, #formation .svg, #loisirs .svg {
+    padding: 10px 50px;
+}
+
+#loisirs h3 {
+    padding-left: 13px;
 }
 
 h3 {
     font-size: 1.5rem;
 }
 
-#experience h3 {
-    width: 350px;
-    padding-top: 15px;
-}
-
-#experience {
-    display: flex;
-    height: 70px;
-}
-
-#experience .img {
-    padding: 30px 50px;
+svg {
+    height: 50px;
 }
 
 #historiqueTexte, #formationTexte, #loisirsTexte {
     padding-left: 150px;
-    color: rgb(34,51,67);
+    color: var(--dark);
     font-size: 1.1rem;
-}
-
-#formation, #loisirs {
-    display: flex;
-    height: 50px;
-    padding-top: 20px;
-}
-
-#formation .img {
-    padding: 10px 50px;
 }
 
 #separation {
     height: 2px;
     width: 300px;
     text-align: left;
-    background-color: rgb(34,51,67);
-    box-shadow: 1px 3px 2px rgb(152,203,0);
+    background-color: var(--dark);
+    box-shadow: 1px 3px 2px var(--main);
 }    
 
-#loisirs .img {
-    padding: 10px 50px;
-}
